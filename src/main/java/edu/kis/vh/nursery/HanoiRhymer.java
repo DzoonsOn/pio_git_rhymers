@@ -7,9 +7,6 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
         return rejectedCount;
     }
 
-    public void setTotalRejected(int totalRejected) {
-        this.rejectedCount = totalRejected;
-    }
 
     public int reportRejected() {
         return rejectedCount;
