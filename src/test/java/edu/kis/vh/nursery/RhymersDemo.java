@@ -5,8 +5,8 @@ import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 class RhymersDemo {
 
-    public static int INT1 = 15;
-    public static int INT = 3;
+    public static final int INT1 = 15;
+    public static final int INT = 3;
 
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
@@ -15,7 +15,7 @@ class RhymersDemo {
                 factory.getFIFORhymer(), factory.getHanoiRhymer()};
         
         for (int i = 1; i < INT1; i++)
-            for (int j = 0; j < 3; j++)
+            for (int j = 0; j < INT; j++)
                 rhymers[j].countIn(i);
         
         java.util.Random rn = new java.util.Random();
