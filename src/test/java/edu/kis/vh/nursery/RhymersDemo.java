@@ -11,11 +11,11 @@ class RhymersDemo {
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
 
-        testRhymers(factory);
+        extracted(factory);
 
     }
 
-    private static void testRhymers(Rhymersfactory factory) {
+    private static void extracted(Rhymersfactory factory) {
         DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
                 factory.getFIFORhymer(), factory.getHanoiRhymer()};
 

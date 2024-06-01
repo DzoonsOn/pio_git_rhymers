@@ -23,6 +23,7 @@ public class RhymersJUnitTest {
 
         rhymer.countIn(888);
 
+        
         result = rhymer.callCheck();
         Assert.assertEquals(false, result);
     }
